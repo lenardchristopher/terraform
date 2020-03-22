@@ -28,7 +28,7 @@ resource "azurerm_kubernetes_cluster" "aks" {
 }
 
 resource "azurerm_storage_account" "storage_account" {
-  name                     = "generalstorage"
+  name                     = "cltest-generalstorage"
   resource_group_name      = azurerm_resource_group.test_resource_group.name
   location                 = azurerm_resource_group.test_resource_group.location
   account_tier             = "Standard"
